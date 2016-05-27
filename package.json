@@ -1,0 +1,19 @@
+{
+  "name": "abc",
+  "version": "1.0.0",
+  "description": "mobile app by apicloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangqingfeng1984/apicloudapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangqingfeng1984/apicloudapp/issues"
+  },
+  "homepage": "https://github.com/zhangqingfeng1984/apicloudapp#readme"
+}
