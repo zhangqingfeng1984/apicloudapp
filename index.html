@@ -23,6 +23,10 @@
             height: 40px;
             height: 30px;
         }
+
+        .vbox ~ button {
+            display:block;
+        }
     </style>
     <script>
         window.zhuge = window.zhuge || [];
@@ -56,7 +60,11 @@
             }
         };
         window.zhuge.load('ad299951d3db4007ab175f59ab826b8b',{debug:true});
-        zhuge.identify('1000',{email:'230194191@qq.com'})
+        zhuge.identify('1000',{email:'230194191@qq.com'});
+
+        function track(name, email){
+            zhuge.track('clickA', {name:name,email:email});
+        }
     </script>
 </head>
 <body>
@@ -72,5 +80,11 @@
 <button>Event2</button>
 <button>Event2</button>
 <button>Event3</button>
+
+<div class="vbox">
+    <button onclick="track('sam','sam@qq.com')">sam clickA event</button>
+    <button onclick="track('vv','vv@qq.com')">vv clickA event</button>
+    <button onclick="track('bb','bb@qq.com')">bob clickA event</button>
+</div>
 </body>
 </html>
